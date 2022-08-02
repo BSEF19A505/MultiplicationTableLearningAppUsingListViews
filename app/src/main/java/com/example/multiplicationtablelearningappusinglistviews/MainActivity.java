@@ -34,20 +34,56 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<String> rows=new ArrayList<>();
                 Intent intent = new Intent(MainActivity.this, table2.class);
                 String tableno = null;
-                    if (i == 0) {
-                        for(int num=0;num<11;) {
+                if (i == 0) {
+                    for (int num = 0; num < 11; ) {
 
                         int count = 2;
-                        tableno="Table of"+count;
-                        String num2 =num+" x "+count+" = "+(num*count);
+                        tableno = "Table of" + count;
+                        String num2 = num + " x " + count + " = " + (num * count);
                         rows.add(num2);
 
-                            num++;
+                        num++;
                     }
-                        intent.putExtra("key",rows);
-                        intent.putExtra("key1",tableno);
-                        startActivity(intent);
                 }
+                if (i == 1) {
+                    for (int num = 0; num < 11; ) {
+
+                        int count = 3;
+                        tableno = "Table of" + count;
+                        String num2 = num + " x " + count + " = " + (num * count);
+                        rows.add(num2);
+
+                        num++;
+                    }
+                }
+                if (i == 2) {
+                    for (int num = 0; num < 11; ) {
+
+                        int count = 4;
+                        tableno = "Table of" + count;
+                        String num2 = num + " x " + count + " = " + (num * count);
+                        rows.add(num2);
+
+                        num++;
+                    }
+                }
+                if (i == 3) {
+                    for (int num = 0; num < 11; ) {
+
+                        int count = 5;
+                        tableno = "Table of" + count;
+                        String num2 = num + " x " + count + " = " + (num * count);
+                        rows.add(num2);
+
+                        num++;
+                    }
+                }
+
+
+                intent.putExtra("key",rows);
+                intent.putExtra("key1",tableno);
+                startActivity(intent);
+
             }
         });
     }
