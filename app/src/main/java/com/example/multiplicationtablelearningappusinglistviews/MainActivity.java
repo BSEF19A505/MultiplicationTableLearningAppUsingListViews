@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         listView=findViewById(R.id.listView);
         ArrayList<String> row=new ArrayList<>();
-        for(int x=2;x<20;x++) {
+        for(int x=2;x<=21;x++) {
             row.add("Table of " + x);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, row);
             listView.setAdapter(adapter);
