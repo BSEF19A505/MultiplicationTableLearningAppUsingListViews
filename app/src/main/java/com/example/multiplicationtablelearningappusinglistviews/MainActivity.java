@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, table2.class);
                 String tableno = null;
                 if (i == 0) {
-                    for (int num = 0; num < 11; ) {
+                    for (int num = 1; num <= 11; ) {
 
                         int count = 2;
                         tableno = "Table of" + count;
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (i == 1) {
-                    for (int num = 0; num < 11; ) {
+                    for (int num = 1; num <= 11;) {
 
                         int count = 3;
                         tableno = "Table of" + count;
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (i == 2) {
-                    for (int num = 0; num < 11; ) {
+                    for (int num = 1; num <= 11; ) {
 
                         int count = 4;
                         tableno = "Table of" + count;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if (i == 3) {
-                    for (int num = 0; num < 11; ) {
+                    for (int num = 1; num <= 11; ) {
 
                         int count = 5;
                         tableno = "Table of" + count;
