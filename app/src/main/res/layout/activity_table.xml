@@ -10,7 +10,7 @@
         android:id="@+id/Table"
         android:layout_width="410dp"
         android:layout_height="641dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
