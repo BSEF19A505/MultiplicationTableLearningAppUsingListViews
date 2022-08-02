@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ListView listView;
+    public final static String Main="Table Number";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +31,22 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i==0) {
-                    Intent intent = new Intent(MainActivity.this, table2.class);
+                ArrayList<String> rows=new ArrayList<>();
+                Intent intent = new Intent(MainActivity.this, table2.class);
+                String tableno = null;
+                    if (i == 0) {
+                        for(int num=0;num<11;) {
 
-                    startActivity(intent);
-                }if(i==1){
-                    Intent intent = new Intent(MainActivity.this, table3.class);
+                        int count = 2;
+                        tableno="Table of"+count;
+                        String num2 =num+" x "+count+" = "+(num*count);
+                        rows.add(num2);
 
-                    startActivity(intent);
+                            num++;
+                    }
+                        intent.putExtra("key",rows);
+                        intent.putExtra("key1",tableno);
+                        startActivity(intent);
                 }
             }
         });

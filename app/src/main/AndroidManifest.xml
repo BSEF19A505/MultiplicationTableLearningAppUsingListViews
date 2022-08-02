@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MultiplicationTableLearningAppUsingListViews">
         <activity
-            android:name=".table3"
-            android:exported="false" />
-        <activity
             android:name=".table2"
             android:exported="false" />
         <activity
