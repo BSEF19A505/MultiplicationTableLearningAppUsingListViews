@@ -22,7 +22,7 @@ public class table2 extends AppCompatActivity {
 
 
         ArrayList<String> rows= (ArrayList<String>) getIntent().getSerializableExtra("key");
-        rows.add("Mahad");
+
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,rows);
 
